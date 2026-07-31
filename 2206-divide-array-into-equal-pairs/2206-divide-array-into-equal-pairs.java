@@ -1,0 +1,16 @@
+class Solution {
+    public boolean divideArray(int[] nums) {
+        for(int i=0;i<nums.length;i++){
+           int freq=0;
+           for(int j=0;j<nums.length;j++){
+            if(nums[i]==nums[j]){
+                freq++;
+            }
+           }
+           if(freq%2!=0){
+            return false;
+           }
+        }
+        return true;
+    }
+}
